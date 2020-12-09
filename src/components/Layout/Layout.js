@@ -24,7 +24,7 @@ import Header from "../Header";
 import Sidebar from "../Sidebar";
 
 // pages
-import Getstarted from "../../pages/getstarted";
+import GetStarted from "../../pages/getstarted";
 import Dashboard from "../../pages/dashboard";
 import Typography from "../../pages/typography";
 import Notifications from "../../pages/notifications";

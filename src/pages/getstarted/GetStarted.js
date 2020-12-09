@@ -14,8 +14,7 @@ import CardActions from "@material-ui/core/CardActions";
 import CardContent from "@material-ui/core/CardContent";
 import CardMedia from "@material-ui/core/CardMedia";
 
-import VideoElement from "../../components/VideoElement";
-import { db } from "../../components/VideoElement/db";
+
 
 const useStyles = makeStyles((theme) => ({
   root: {
