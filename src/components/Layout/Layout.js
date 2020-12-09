@@ -55,6 +55,11 @@ function Layout(props) {
             <div className={classes.fakeToolbar} />
             <Switch>
               <Route path="/app/getstarted" component={GetStarted} /> 
+              <Route
+                exact
+                path="/app/dataupload"
+                render={() => <Redirect to="/app/ui/icons" />}
+              />
               <Route path="/app/dashboard" component={Dashboard} />
               <Route path="/app/typography" component={Typography} />
               <Route path="/app/tables" component={Tables} />
@@ -64,7 +69,12 @@ function Layout(props) {
                 path="/app/ui"
                 render={() => <Redirect to="/app/ui/icons" />}
               />
-              <Route path="/app/ui/maps" component={Maps} />
+              <Route
+                exact
+                path="/app/ui/maps"
+                render={() => <Redirect to="www.google.com" />}
+              />
+              
               <Route path="/app/ui/icons" component={Icons} />
               <Route path="/app/ui/charts" component={Charts} />
             </Switch>
@@ -78,15 +88,15 @@ function Layout(props) {
               <div>
                 <Link
                   color={'primary'}
-                  href={'https://flatlogic.com/'}
+                  href={'https://provensolution.com/'}
                   target={'_blank'}
                   className={classes.link}
                 >
-                  Flatlogic
+                  Proven Solution
                 </Link>
                 <Link
                   color={'primary'}
-                  href={'https://flatlogic.com/about'}
+                  href={'https://provensolution.com/about'}
                   target={'_blank'}
                   className={classes.link}
                 >
@@ -94,7 +104,7 @@ function Layout(props) {
                 </Link>
                 <Link
                   color={'primary'}
-                  href={'https://flatlogic.com/blog'}
+                  href={'https://provensolution.com/blog'}
                   target={'_blank'}
                   className={classes.link}
                 >
@@ -103,7 +113,7 @@ function Layout(props) {
               </div>
               <div>
                 <Link
-                  href={'https://www.facebook.com/flatlogic'}
+                  href={'https://www.facebook.com/provensolution'}
                   target={'_blank'}
                 >
                   <IconButton aria-label="facebook">
@@ -115,7 +125,7 @@ function Layout(props) {
                   </IconButton>
                 </Link>
                 <Link
-                  href={'https://twitter.com/flatlogic'}
+                  href={'https://twitter.com/provensolution'}
                   target={'_blank'}
                 >
                   <IconButton aria-label="twitter">
@@ -127,7 +137,7 @@ function Layout(props) {
                   </IconButton>
                 </Link>
                 <Link
-                  href={'https://github.com/flatlogic'}
+                  href={'https://github.com/provensolution'}
                   target={'_blank'}
                 >
                   <IconButton
